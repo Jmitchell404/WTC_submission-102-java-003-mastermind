@@ -20,6 +20,16 @@ public class CodeGenerator {
      */
     public String generateCode(){
         //TODO: implement using this.random
-        return null;
+        String code = "";
+        for(int i = 0; i < 4; i++){
+            int randNum = random.nextInt(8)+1;
+            code += randNum;
+        }
+//        System.out.println("4-digit Code has been set. Digits in range 1 to 8. You have 12 turns to break it."
+//        "Input 4 digit code:");
+//        System.out.println("Please enter exactly 4 digits (each from 1 to 8).");
+//        System.out.println("Input 4 digit code:");
+//        System.out.println(code);
+        return code;
     }
 }
